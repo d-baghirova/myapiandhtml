@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 const start = async () => {
     try {
-        mongoose.connect('mongodb+srv://diana:diana18@cluster0.fd4meb0.mongodb.net/?retryWrites=true&w=majority', 
+        mongoose.connect('mongodb+srv://<name>:<password>@cluster0.fd4meb0.mongodb.net/?retryWrites=true&w=majority', 
         {useNewUrlParser: true});
 
         app.listen(PORT, () => {console.log(`http://localhost:${PORT}`)})
